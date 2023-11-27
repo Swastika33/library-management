@@ -1,0 +1,14 @@
+This project is done by swastika chakraborty.
+
+# POINTS TO BE NOTED #
+- Install the Requirements: pip install -r requirements.txt
+- Then, make database migrations: python manage.py makemigrations
+- python manage.py migrate
+- And finally, run the application: python manage.py runserver
+
+# AN EG IS GIVEN IN CASE U WANT TO SEE IT #
+For Admin Account, please create one with superuser!
+-first go to sing up botto and then give the details
+-for me user: sonakaadmin, pass :sonai
+-then give ur passwor name and then enter the admin portal
+- student : gaj_1 and pss:123

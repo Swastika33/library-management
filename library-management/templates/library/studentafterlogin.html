@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Library System</title>
+<style media="screen">
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+  
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.jumbotron{
+margin-top: 0%;
+margin-bottom: 0px;
+background-image:linear-gradient(rgb(255, 178, 255),white ) ;
+}
+
+.jumbotron h1{
+  text-align: center;
+  
+}
+
+.alert-success{
+  margin-top: 5%;
+}
+h1 {text-align: center;}
+    h2 {text-align: center;}
+	li {text-align: center;
+  text-size-adjust: 80%;}
+
+</style>
+  </head>
+  <body>
+    {% include "library/navbarstudent.html" %}
+    <br>
+    <h3 style=" margin-bottom: 20px;" class='alert alert-success'>WELCOME ! To Library Management System Portal For Students</h3>
+    <div style="background-color: rgb(250, 210, 250);"
+     class="jumbotron"   style="margin-bottom: 0px;" style="background-color: plum;">
+    <h1 class="display-4" style="color:purple ;" > <b> Hello  {{user.first_name}} !</b></h1>
+    <p class="lead" style="color:purple ;">As you are Student, you can see how many book you have taken from library with fine and many more ...!
+    </p>
+    <centre><h2>You can access various features after Login/SignUp. </centre></h2>
+          <br>
+          <div style="font-size: larger;">
+            <li >Book Details</li>
+            <li>Book Issued</li>
+            <li>Sugestions </li>
+            <li>Returned Date</li>
+            <li>Fine</li>
+          </div>
+          
+    <hr class="my-4">
+    <h2><p>These Are The Option Available For You : </h2></p>
+    <div class="options" style="text-align:center">
+      <a href="viewissuedbookbystudent" class="btn btn-primary btn-lg active" style="background-color: darkcyan;"style="border-radius: 0%;" role="button" aria-pressed="true">View issued book to you</a><br><br>
+        </div>
+
+    </div>
+    
+
+    {% include "library/footer.html" %}
+  </body>
+</html>

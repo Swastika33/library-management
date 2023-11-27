@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Library System </title>
+<style media="screen">
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.jumbotron{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-image:linear-gradient(rgb(255, 178, 255),white ) ;
+}
+.jumbotron h1{
+  text-align: center;
+}
+h1 {text-align: center;}
+li {text-align: inherit;
+}
+</style>
+  </head>
+  <body>
+    {% include "library/navbaradmin.html" %}
+  <br>
+       <h3 style=" margin-bottom: 0px;" class='alert alert-success'>WELCOME ! To Library Management System Portal For Admins</h3>
+    <h3 style=" margin-bottom: 0px;" style="position: absolute;" class='alert alert-success'>WELCOME ! To Library Management System Poratal For Admins</h3>
+    
+    <div class="jumbotron" style="background-color: rgb(250, 210, 250);" >
+    <h1 class="display-4"style="color:purple ;" style="margin: 0%;" > <b>Hello Admin {{user.first_name}} !</b></h1>
+    <p class="lead" style="color:purple ;">As you are Admin, you can add a book to library, view available book in library</p>
+
+    <H2>You can access various features after Log in/Sign Up.</H2>
+    <br>
+    <div style="font-size: larger;" >
+      <li>Books Details</li>
+      <li>Books Issued details</li>
+      <li>Feedback and Sugestion </li>
+      <li>Students Details</li>
+      <li>Adding New Books </li>
+    </div>
+      <hr class="my-4">
+    <h2><p style="color:purple ;">These Are The Options Available For You : </p>
+    <div class="options" style="text-align:center">
+      <a href="addbook" class="btn btn-primary btn-lg active" style="border-radius: 0%;" style="visibility: hidden;" role="button" aria-pressed="true">Add Book To Library</a><br><br>
+      <a href="viewbook" class="btn btn-primary btn-lg active" style="border-radius: 0%;" style="background-color: darkcyan;" role="button" aria-pressed="true">View Available Book</a><br><br>
+      <a href="issuebook" class="btn btn-primary btn-lg active" style="border-radius: 0%;" style="background-color: darkcyan;" role="button" aria-pressed="true">Issue New Book</a><br><br>
+      <a href="viewissuedbook" class="btn btn-primary btn-lg active" style="border-radius: 0%;" style="background-color: darkcyan;" role="button" aria-pressed="true">View Issued Book</a><br><br>
+      <a href="viewstudent" class="btn btn-primary btn-lg active" style="border-radius: 0%;" style="background-color: darkcyan;" role="button" aria-pressed="true">View Student</a>
+    </div>
+
+    </div>
+
+
+    {% include "library/footer.html" %}
+  </body>
+</html>
